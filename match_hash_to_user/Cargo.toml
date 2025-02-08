@@ -1,0 +1,7 @@
+[package]
+name = "match_hash_to_user"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1"
