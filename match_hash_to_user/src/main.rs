@@ -26,7 +26,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let ntlm_regex = Regex::new(r"^[0-9A-Fa-f]{32}$")?;
 
     // Prepare a HashMap magic data structure to store ntlm_hash -> password
-    let potfile_path = "/home/cloudadmin/.local/share/hashcat/hashcat.potfile";
+    let potfile_path = "~/.local/share/hashcat/hashcat.potfile";
     let potfile = File::open(potfile_path)?;
     let pot_reader = BufReader::new(potfile);
 
